@@ -1,0 +1,38 @@
+.chat-side
+  .side-header
+    %p.side-header__box__user-name testTaro
+    %ul.side-header__box__menu
+      %li.side-header__box__menu__new-group
+        %i.fa.fa-edit
+      %li.side-header__box__menu__edit-user
+        %i.fa.fa-cog
+  .groups
+    .group
+      .group__group-name
+        %p test-group
+      .group__message
+        %p こんにちは！
+
+.chat-main
+  .main-header
+    .main-header__name
+      %h2 test-group
+      %p Member : testTaro Jiro Hanako 
+    .main-header__edit-btn
+      Edit  
+  .messages  
+    .message
+      .message__upper-info
+        %p.message__upper-info--talker
+          testTaro
+        %p.message__upper-info--date
+          20xx/xx/xx(Mon) 00:00:00
+      .message__text
+        %p こんにちは！    
+
+  %form.new-message
+    .input-box
+      %input.input-box__text{:name => "message[content]", :placeholder => "type a message", :type => "text"}
+      %label.input-box__image{:for => "message-image"}
+        %i.fa.fa-image 
+    %input.submit-btn{:type => "submit", :value => "Send"}

@@ -3,5 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "./reset";
 @import "variable";
+@import "user";
 @import "messages.scss";
 @import "font-awesome";
+@import "modules/flash";

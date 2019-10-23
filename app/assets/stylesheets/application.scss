@@ -2,10 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "./reset";
-@import "modules/_variable";
+@import "variable";
 @import "user";
 @import "messages.scss";
-@import "group";
 @import "font-awesome";
 @import "modules/flash";
-@import "modules/_side_bar";

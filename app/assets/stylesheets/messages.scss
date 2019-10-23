@@ -1,10 +1,10 @@
-.side-bar {
+.chat-side {
   width: 300px;
   height: 100vh;
   background-color: #2f3e51;
   float: left;
 
-  .header {
+  .side-header {
     background-color: #253141;
     color: $white;
     font-weight: bold;
@@ -14,16 +14,16 @@
     justify-content: space-between;
     padding: 0 20px;
 
-    h3 &__name {
+    p &__box__user-name {
       font-size: 16px;
       display: flex;
       float: left;
     }
 
-    ul.header__list {
+    ul.side-header__box__menu {
       display: flex;
 
-      li.list {
+      li {
         margin-left: 0.3rem;
       }
     }           
@@ -35,7 +35,7 @@
     .group {
       margin: 0 0 40px;
 
-      &__name {
+      &__group-name {
         font-size: 15px;
         color: $white;
         font-weight: bold;

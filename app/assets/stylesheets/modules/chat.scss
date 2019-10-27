@@ -30,9 +30,12 @@
       margin-top: 28px;
       padding: 0 20px;
       &__button {
-        color: $btn-blue;
-        text-decoration: none;  
+        color: $btn-blue;  
       }  
+      a {
+        text-decoration: none;
+        color: $btn-blue;
+      }
     }
   } 
   
@@ -76,14 +79,15 @@
     background-color: #dddddd;
     box-sizing: border-box;
     height: 90px;
-    padding: 20px 50px 20px 40px;
+    padding: 20px 40px;
     position: fixed;
     bottom: 0;
     &__message {
       border: none;
       float: left;
       height: 50px;
-      width: calc(100% - 150px);  
+      width: calc(100% - 160px);
+      padding-left: 10px;  
     } 
     &__mask {
       background-color: $white;

@@ -93,14 +93,34 @@ li {
   &__name {
     float: left;
   }
-  &__btn {
+  .user-search-add {
+    color: $btn-blue;
+    font-size: 14px;
+    width: 28px;
+    line-height: 50px;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+  }
+  &__remove {
+    color: #f05050;
+    width: 28px;
+    line-height: 50px;
+    font-size: 14px;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+  }
+  .chat-group-user__btn {
     float: right;
     display: inline-block;
     cursor: pointer;
-    &--add {
+
+    .user-search-add {
       color: #38aef0;
     }
-    &--remove {
+
+    &.__remove {
       color: #f05050;
     }
   }

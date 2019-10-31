@@ -1,9 +1,9 @@
 $(function(){ 
      function buildHTML(message){
-         img_url = `<img class="lower-message__image" src= '${message.image.url}' >`
-         image = message.image.url ? message.content ? img_url : img_url : "";
+         img_url = `<img class="lower-message__image" src= '${message.image}' >`
+         image = message.image ? message.content ? img_url : img_url : "";
          var html =
-          `<div class="message" data-message-id=${message.id}>
+          `<div class="message" data-id=${message.id}>
              <div class="upper-message">
                <div class="upper-message__user-name">
                  ${message.user_name}
@@ -56,7 +56,7 @@ $(function(){
         })
         .done(function(messages) {
           var insertHTML = ""; 
-          messages.forEach(function(message) {    
+          messages.forEach(function(message) {
             if (message.id > last_message_id) {
               insertHTML += buildHTML(message);
             }

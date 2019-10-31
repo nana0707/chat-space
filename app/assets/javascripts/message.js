@@ -56,7 +56,7 @@ $(function(){
         })
         .done(function(messages) {
           var insertHTML = ""; 
-          messages.forEach(function(message) {
+          messages.forEach(function(message) {    
             if (message.id > last_message_id) {
               insertHTML += buildHTML(message);
             }

@@ -29,7 +29,7 @@
           %p.chat-group-user__name= current_user.name
         - group.users.each do |user|
           - if current_user.name != user.name
-            .chat-group-user.clearfix.js-chat-member
+            .chat-group-user.clearfix.js-chat-member{ id: "chat-group-user-#{user.id}" }
               %input{name: "group[user_ids][]", type: "hidden", value: user.id}
               %p.chat-group-user__name
                 = user.name

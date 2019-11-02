@@ -17,6 +17,8 @@ default: &default
   password:
   socket: /var/lib/mysql/mysql.sock
 
+  # socket: /var/lib/mysql/mysql.sock
+
 development:
   <<: *default
   database: chat-space_development

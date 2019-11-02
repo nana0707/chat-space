@@ -1,6 +1,6 @@
 $(function(){ 
      function buildHTML(message){
-         img_url = `<img class="lower-message__image" src= '${message.image}' >`
+         img_url = `<img class="lower-message__image" src= '${message.image.url}' >`
          image = message.image ? message.content ? img_url : img_url : "";
          var html =
           `<div class="message" data-id=${message.id}>

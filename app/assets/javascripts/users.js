@@ -60,7 +60,7 @@ $(function() {
       .parent()
       .remove();
     addDeleteUser(userName, userId);
-    addMember(userName, userId);
+    addMember(userId);
   });
   $(document).on("click", ".chat-group-user__remove", function() {
     $(this)

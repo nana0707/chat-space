@@ -39,7 +39,7 @@ $(function() {
       .done(function(users) {
         $("#user-search-result").empty();
 
-        if (users.length !== 0) {
+        if (users.length !== 0 && user.id !== userId) {
           users.forEach(function(user) {
             addUser(user);
           });
@@ -47,9 +47,6 @@ $(function() {
           return false;
         } else {
           addNoUser();
-        }
-        if (user.id == userId) {
-          user = "";
         }
       })
       .fail(function() {

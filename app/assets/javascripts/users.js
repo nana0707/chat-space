@@ -48,6 +48,9 @@ $(function() {
         } else {
           addNoUser();
         }
+        if (user.id == userId) {
+          user = "";
+        }
       })
       .fail(function() {
         alert("通信エラーです。ユーザーが表示できません。"); 

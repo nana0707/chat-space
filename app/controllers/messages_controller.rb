@@ -9,9 +9,9 @@ class MessagesController < ApplicationController
     def create
       @message = @group.messages.new(message_params)
       if @message.save
-        image = MiniMagick::Image.read(params[:image])
-        image.resize_to_fit: [200, 200]
-        image.write "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
+        img = MiniMagick::Image.read(params[:image])
+        img.resize_to_fit: [200, 200]
+        img.write "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
         respond_to do |format|
           format.html { redirect_to group_messages_path(@group), notice: 'メッセージが送信されました' }
           format.json

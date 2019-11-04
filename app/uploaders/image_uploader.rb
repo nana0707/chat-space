@@ -1,7 +1,7 @@
 class ImageUploader < CarrierWave::Uploader::Base
   include CarrierWave::MiniMagick
 
-  process resize_to_fit: [200, 200]
+  process resize_to_fit: [800, 800]
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   
@@ -22,8 +22,8 @@ class ImageUploader < CarrierWave::Uploader::Base
   #   "/images/fallback/" + [version_name, "default.png"].compact.join('_')
   # end
 
-  Process files as they are uploaded:
-  process scale: [200, 300]
+  # Process files as they are uploaded:
+  # process scale: [200, 300]
   #
   # def scale(width, height)
   #   # do something
